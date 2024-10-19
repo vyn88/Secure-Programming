@@ -1,0 +1,36 @@
+.content{
+    
+    justify-items: center;
+    text-align: center;
+    margin: 150px 200px;
+    border: 1px solid black;
+    padding-bottom: 50px;
+    width: 50%;
+}
+
+.username{
+    
+    margin: auto;
+    margin-bottom: 20px;
+}
+
+.email{
+    margin: auto;
+    margin-bottom: 20px;
+}
+
+.password{
+    
+    margin: auto;
+    margin-bottom: 20px;
+}
+
+.confirm{
+
+    margin: auto;
+    margin-bottom: 20px;
+}
+
+.btnsubmit{
+    margin-top: 40px;
+}
