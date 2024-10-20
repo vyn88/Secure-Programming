@@ -7,10 +7,13 @@
     <link rel = "stylesheet" type = "text/css" href = "index.css">
 </head>
 <body>
-    <h1> Sign up and Login Page </h1>
+    <div class = "text">
+    <h1 class = "h1"> Sign up and Login Page </h1>
+    </div>
     <p> Please sign up for an account or login to an existing account </p>
     <div class = "content">
-    <form>
+    <form method = "POST">
+    <div class = "content-box">
         <div class = "register">
             <button class = "btn2"><a href = "./register.php"> Register </a></button>
         </div>
@@ -19,6 +22,6 @@
             <button class = "btn3"><a href = "./login.php"> Login </a></button>
         </div>
     </form>
-        </div>
+    </div>  
 </body>
 </html>

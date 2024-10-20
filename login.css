@@ -5,6 +5,7 @@
     margin: 150px 200px;
     border: 1px solid black;
     padding-top: 20px;
+    padding-bottom: 50px;
     width: 50%;
 }
 
@@ -40,6 +41,7 @@
 .googlesignin{
     margin-top: 30px;
     margin-bottom: 50px;
+    border: 1px solid black;
 }
 
 .googlesignin:hover{

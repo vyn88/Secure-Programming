@@ -23,15 +23,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Ojekku Home Page </title>
+    <link rel = "stylesheet" type = "text/css" href= "home.css">
 </head>
 
 <body>
-    <h1> Home Page </h1>
-
+    <h1 class = "h1"> Home Page </h1>
+    <div class = "welcome">
     <?php if (isset($user)): ?>
         <p> Welcome <?= htmlspecialchars($user["username"]) ?>! </p>
 
     <?php endif; ?>
+    </div>
 
 </body>
 
