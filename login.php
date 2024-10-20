@@ -18,7 +18,7 @@
                 session_start();
 
                 session_regenerate_id();
-                $_SESSION["user_id"] = $user["session_id"];
+                $_SESSION["user_id"] = $user["id"];
                 header("Location: home.php");
                 exit;
             }
@@ -78,6 +78,10 @@
 
         <div class = "googlesignin">
             <p><a class = "link" href = "<?= $url; ?>"> Login with your Google Account </a></p>
+        </div>
+
+        <div class="forgot">
+            <a href = "./forgotten-password-form.php"> Forgot Password? </a>
         </div>
    </form>
 </div>
