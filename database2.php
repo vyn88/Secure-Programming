@@ -1,6 +1,6 @@
 <?php
     $host = "localhost";
-    $db_name = "signup_db";
+    $db_name = "ojekku";
     $username = "root";
     $password = "";
 

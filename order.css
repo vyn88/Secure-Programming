@@ -1,0 +1,46 @@
+.header_picture{
+    width: 50px;
+}
+.header_pictures{
+    border: 1px solid black;
+    border-radius: 5px;
+    border-image: repeat;
+}
+
+#map{
+    position: relative;
+    margin-top: 60px; /* menyesuaikan dengan tinggi navbar */
+    width: 100%; /* contoh: sesuaikan dengan kebutuhan tata letak */
+    height: 500px; /* atau atur sesuai keinginan */
+}
+
+.background_order{
+    background-color: #86B6F6;
+    padding: 10px;
+}
+
+.back_back{
+    text-align: center;
+}
+
+.back_back1{
+    text-align: center;
+}
+.sub_order{
+    background-color: #BDFDFD;
+    border: 1px #BDFDFD;
+    border-radius: 5px;
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-bottom: 5px;
+    padding-top: 5px;
+    width: 200px;
+}
+
+.but{
+    background-color: #D9D9D9;
+    border: 1px #D9D9D9;
+    border-radius: 5px;
+    width: 350px;
+    height: 35px;
+}
