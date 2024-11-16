@@ -1,0 +1,2 @@
+/vendor/       # Abaikan folder vendor
+/node_modules/ # Abaikan folder node_modules

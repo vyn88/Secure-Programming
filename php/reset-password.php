@@ -7,7 +7,7 @@
 
     $expiry = date("Y-m-d H:i:s", time() + 60 * 60);
 
-    $sql = require("./database2.php");
+    $sql = require("../database/database2.php");
 
     $newsql = "UPDATE users
                SET reset_token_hash = ?, 
@@ -21,7 +21,7 @@
     $stmt->execute();
 
     if ($sql->affected_rows){
-        $mail = require("./configure-smtp.php");
+        $mail = require("configure-smtp.php");
 
         $mail->setFrom("noreply@example.com");
         $mail->addAddress($email);

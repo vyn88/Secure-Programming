@@ -1,17 +1,17 @@
 <?php
     $host = "localhost";
-    $db_name = "signup_db";
+    $db_name = "ojekku";
     $username = "root";
     $password = "";
 
-    $sql = new mysqli(hostname: $host,
+    // Koneksi ke database
+    $sqli = new mysqli(hostname: $host,
                       username: $username,
                       password: $password,
                       database: $db_name);
 
-    if ($sql->connect_errno){
-        die("Connection error: " . $sql->connect_error);
+    if ($sqli->connect_error){
+        die("Connection error: " . $sqli->connect_error);
     }
-
-    return $sql;
+    return $sqli
 ?>

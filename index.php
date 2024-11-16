@@ -3,25 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel = "stylesheet" type = "text/css" href = "index.css">
+    <title>Ojekku - Selalu Ada di Setiap Langkahmu</title>
+    <link rel="shortcut icon" href="./images/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="index.css">
 </head>
 <body>
-    <div class = "text">
-    <h1 class = "h1"> Sign up and Login Page </h1>
+    <div class="container">
+        <div class="welcome">
+            <h1>Welcome</h1>
+        </div>
+        <div class="description">
+            <p> Please sign up for an account or login to an existing account </p>
+        </div>
+        <div>
+            <button class="btn1"><a href="./php/both_register.php">Register</a></button>
+        </div>
+        <div class="btn2">
+        <button class="btn2"><a href="./php/both_login.php">Login</a></button>
+        </div>
     </div>
-    <p> Please sign up for an account or login to an existing account </p>
-    <div class = "content">
-    <form method = "POST">
-    <div class = "content-box">
-        <div class = "register">
-            <button class = "btn2"><a href = "./register.php"> Register </a></button>
-        </div>
-
-        <div class = "login">
-            <button class = "btn3"><a href = "./login.php"> Login </a></button>
-        </div>
-    </form>
-    </div>  
 </body>
 </html>
