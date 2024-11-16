@@ -1,10 +1,11 @@
 To run the website, you need:
 1. Git Clone the repository and put in xampp folder (htdocs)
-2. Import the database
-3. Open terminal in VScode
-4. run "composer install"
-5. run npm init
-6. run npm install express
+2. Import the ojekku database's to your database
+3. Download Composer in google
+4. Open terminal in VScode
+5. run "composer install"
+6. run npm init
+7. run npm install express
 
 
 
