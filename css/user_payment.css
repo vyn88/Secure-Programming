@@ -1,0 +1,61 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #86b6f6;
+}
+/* ------------------ */
+
+/* Desain Navbar */
+.div_picture {
+  display: flex;
+  justify-content: space-between;
+  background-color: white;
+}
+
+.header_picture {
+  width: 50px;
+}
+
+.header_picture2 {
+  width: 50px;
+  /* margin-right: 300px; */
+}
+
+.searchh {
+  background-color: #d9d9d9;
+  border: 1px #d9d9d9;
+  border-radius: 5px;
+}
+
+.imgs {
+  width: 50px;
+}
+
+/* Desain payment section */
+.container {
+  display: grid;
+  place-items: center;
+}
+
+.main-container > h2 {
+  text-align: center;
+  text-justify: center;
+  font-size: 40px;
+}
+
+.button {
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: 500;
+  width: 300px;
+  height: 60px;
+  margin: 50px;
+}
+
+.button:hover {
+  background-color: #0056b3;
+}

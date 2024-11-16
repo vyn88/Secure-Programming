@@ -1,0 +1,147 @@
+/* Desain Navbar */
+.div_picture {
+  display: flex;
+  justify-content: space-between;
+}
+
+.header_picture {
+  width: 50px;
+}
+
+.header_picture2 {
+  width: 50px;
+  /* margin-right: 300px; */
+}
+
+.searchh {
+  background-color: #d9d9d9;
+  border: 1px #d9d9d9;
+  border-radius: 5px;
+}
+
+.imgs {
+  width: 50px;
+}
+
+/* Desain map */
+#map {
+  position: relative;
+  width: 100%; /* contoh: sesuaikan dengan kebutuhan tata letak */
+  height: 500px; /* atau atur sesuai keinginan */
+}
+
+.background_order {
+  background-color: #86b6f6;
+  padding: 10px;
+}
+
+.form-group {
+  text-align: center;
+}
+
+.back_back1 {
+  text-align: center;
+}
+.sub_order {
+  background-color: #bdfdfd;
+  border: 1px #bdfdfd;
+  border-radius: 5px;
+  padding-left: 25px;
+  padding-right: 25px;
+  padding-bottom: 5px;
+  padding-top: 5px;
+  width: 200px;
+}
+
+.but {
+  background-color: #d9d9d9;
+  border: 1px #d9d9d9;
+  border-radius: 5px;
+  width: 350px;
+  height: 35px;
+}
+
+.search-container {
+  display: flex;
+  align-items: center;
+  border: 2px solid #f0f0f0;
+  border-radius: 5px;
+  overflow: hidden;
+  background-color: #f0f0f0;
+  width: 300px;
+  /* margin-right: 300px; */
+}
+
+.search-input {
+  flex: 1;
+  padding: 10px;
+  border: none;
+  outline: none;
+  background-color: #f0f0f0;
+  font-size: 16px;
+}
+
+.search-button {
+  background-color: transparent;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.search-button img {
+  width: 20px;
+  height: 20px;
+}
+
+#container {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 600px;
+  height: 400px;
+  width: 100%;
+  margin-top: 20px;
+}
+
+label,
+input,
+button {
+  margin: 10px 0;
+  width: 100%;
+}
+
+#result {
+  margin-top: 20px;
+  padding: 10px;
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  text-align: center;
+}
+
+button {
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+.main-container {
+  background-color: #86b6f6;
+  height: 700px;
+  display: flex;
+  justify-content: center;
+}
+
+.payyy a {
+  text-decoration: none;
+  color: #fff;
+}
