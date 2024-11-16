@@ -132,14 +132,14 @@
 </head>
 <body>
     <?php include "../layout/header_order.php" ?>
-    <h1 class="info">Berhasil Dapat Driver!</h1>
+    <h1 class="info">You get the driver!</h1>
     <div id="map"></div>
 
     <div class="main-container">
         <div class="container">
             <div id="result"></div>
             <div class="top-container">
-                <div><h3>Nama Driver: Justin</h3></div>
+                <div><h3>Driver Name: Justin</h3></div>
                 <div class="rating">
                     <img src="../images/star.png" alt="Rating" style="width: 20px; height: 20px;">
                     <span>5 / 5</span>

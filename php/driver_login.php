@@ -7,17 +7,15 @@
     if ($_SERVER["REQUEST_METHOD"] === "POST"){
         $sql = require("../database/database2.php");
 
-        $sqli = sprintf("SELECT * FROM drivers 
-                         WHERE email = '%s' ", 
-                         $sql->real_escape_string($_POST["email"]));
-
-        $res = $sql->query($sqli);
+        $stmt = $sql->prepare("SELECT * FROM drivers WHERE email = ? AND name = ? ");
+        $stmt->bind_param("ss", $_POST["email"], $_POST["username"]);
+        $stmt->execute();
+        $res = $stmt->get_result();
         $driver = $res->fetch_assoc();
+        $stmt->close();
 
         if ($driver){
             if (password_verify($_POST["password"], $driver["password"])){
-    
-
                 session_regenerate_id();
                 $_SESSION["driver_id"] = $driver["id"];
                 header("Location: driver_home.php");

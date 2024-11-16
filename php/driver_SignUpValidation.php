@@ -30,6 +30,11 @@ if ($_SERVER['REQUEST_METHOD'] == "POST"){
         return false;
     }
 
+    else if ($_POST["username"] === "admin" && $_POST["email"] === "admin@example.com"){
+        echo("These credentials are not allowed, pick a different format of credentials!");
+        return false;
+    }
+
     $hashed_password = htmlspecialchars(password_hash($_POST["password"], PASSWORD_DEFAULT));
     $sql = require("../database/database2.php");
 

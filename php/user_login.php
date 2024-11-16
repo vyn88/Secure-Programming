@@ -9,24 +9,18 @@
     if ($_SERVER["REQUEST_METHOD"] === "POST"){
         $sql = require("../database/database2.php");
 
-        $sqli = sprintf("SELECT * FROM users 
-                         WHERE email = '%s' ", 
-                         $sql->real_escape_string($_POST["email"]));
-
-        $res = $sql->query($sqli);
+        $stmt = $sql->prepare("SELECT * FROM users WHERE email = ? AND username = ? ");
+        $stmt->bind_param("ss", $_POST["email"], $_POST["username"]);
+        $stmt->execute();
+        $res = $stmt->get_result();
         $user = $res->fetch_assoc();
+        $stmt->close();
 
         if ($user){
             if (password_verify($_POST["password"], $user["password"])){
                 session_regenerate_id();
                 $_SESSION["user_id"] = $user["id"];
-                $_SESSION['role'] = $user['role'];
-
-                if ($user['role'] === 'driver') {
-                    header("Location: driver_home.php");
-                } else {
-                    header("Location: user_home.php");
-                }
+                header("Location: user_home.php");
                 exit;
             }
         }

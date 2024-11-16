@@ -39,7 +39,7 @@
             <ul class="nav-links">
                 <li><a href="both_home.php" class="active">Home</a></li>
                 <li><a href="user_order.php">Order</a></li>
-                <li><a href="about_us.php">About Us</a></li>
+                <li><a href="driver_about_us.php">About Us</a></li>
                 <li><a href="faq_user.php">FAQ</a></li>
             </ul>
             <div class="nav-auth">
